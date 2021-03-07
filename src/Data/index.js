@@ -1,31 +1,41 @@
-export const event_data = [
+import windensemble from "../Asset/sample-image.jpeg";
+
+export const course_data = [
     {
-       name: "Skribblio",
-       Time: "March 12th",
-       Zoom: "zoom.us"
+       name: "Wind Ensemble",
+       type: "Music",
+       grades: "Grade 9 - 12",
+       student_experience: "advice",
+       workload: "Heavy",
+       picture: windensemble 
     },
-    {
-        name: "Movie",
-        Time: "March 12th",
-        Zoom: "zoom.us"
-     },
-     {
-        name: "Art",
-        Time: "March 12th",
-        Zoom: "zoom.us"
-     }
+   {
+      name: "Honors Biology",
+      type: "Science",
+      grades: "Grade 9 - 12",
+      student_experience: "advice",
+      workload: "Heavy",
+   },
+   {
+      name: "Robotics",
+      type: "Computer Science",
+      grades: "Grade 9 - 12",
+      student_experience: "advice",
+      workload: "Heavy",
+   },
+   {
+      name: "AP Chemistry",
+      type: "Science",
+      grades: "Grade 9 - 12",
+      student_experience: "advice",
+      workload: "Heavy"
+   },
+   {
+      name: "Precalculus",
+      type: "Math",
+      grades: "Grade 9 - 12",
+      student_experience: "advice",
+      workload: "Heavy"
+   },
+
 ]
-
-// course_data.filter((course) => {
-//     return course.type == "Science"
-// })
-
-event_data.filter((event) => {
-    if(this.state.search.length>0) {
-        return event.name.includes(this.state.search)
-    }
-    return true
-})
-
-/* [“word second”, “one two”]{{first: “word”, second: “second”}Arr.map((string) => ({ first: string.split(‘ ‘)[0], second: string.split(‘ ‘)[1]})) */
-

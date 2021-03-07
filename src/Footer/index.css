@@ -1,12 +1,15 @@
 #footer {
-    padding-top: 10px;
-    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 0px;
     /* background-color: #113450; */
-    background-color: #f2d9d9;
+    background-color: #5a697e;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
+    height: 15%;
+    margin-bottom: 0;
+    margin-top: 20vh;
 }
 
 #footer h4 {
@@ -28,17 +31,12 @@
     align-items: center;
 }
 
-#footer #contact {
-    margin-bottom: 20px;
-}
-
 #footer #contact p {
     color: white;
 }   
 
 #footer #links #social {
     width: 40%;
-    margin-top: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -68,11 +66,6 @@
     flex-direction: row;
 }
 
-#footer #links #useful {
-    margin-top: 15px;
-}
-
 #footer #links #useful a{
     color: #ffffff;
-    margin-bottom: 40px;
 }

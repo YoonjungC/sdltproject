@@ -5,13 +5,13 @@ import "./index.css";
 const Header = () => (
     <div id="header">
         <a id="website-header" href="/"> 
-            <h4> Dragons Hub </h4>
+            <h4> Dragons Courses </h4>
         </a>
         <div className="links">  
         <Link to="/">
             <p id="link-button">Home</p>
         </Link>
-        <Link to="/events">
+        <Link to="/courses">
             <p id="link-button"> Explore </p>
         </Link>
         <Link to="/faq">

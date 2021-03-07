@@ -1,0 +1,49 @@
+.card {
+    width: 360px;
+    height: 220px;
+    background-color: rgb(235, 79, 79);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card #graphic {
+    height: 140px;
+    width: 355px;
+    background-color: blue;
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-top: 3px;
+    padding-bottom: 9px;
+}
+
+.card #text {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-right: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.card #text #title {
+    font-size: 20px !important;
+    color: black !important;
+    font-style: bold !important;
+}
+.card #text #grades {
+    font-size: 12px !important;
+    color: black !important;
+    font-style: bold !important;
+    margin-top: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+/* 
+#link {
+    margin-left: 200px;
+} */

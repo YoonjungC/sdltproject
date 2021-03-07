@@ -1,0 +1,73 @@
+.courses-body {
+    margin-top: 150px;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 60px;
+}
+
+/* .courses-body .coursecards-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+} */
+
+.courses-body .filter-container button {
+    background-color: hsl(0, 0%, 100%);
+    color: rgb(0, 0, 0);
+    font-style: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    border: 0.5px solid grey;
+    border-radius: 2px;
+    outline-color: cadetblue;
+  }
+
+  .courses-body .filter-container button p {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
+
+.filter-box .search-bar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+.search-container #search-bar input {
+    border: 0.5px solid grey;
+    border-radius: 2px;
+    font-family: Avenir-Book;
+    outline: cadetblue;
+    padding: 3px;
+}
+
+#search-bar input:active {
+    filter: brightness(80%);
+}
+
+#search-bar input p {
+    font-family: Avenir-Book;
+    font-weight: bold;
+    margin: 2.5% 2.5% 0 0;
+    color: rgb(35, 35, 35);
+}
+
+#submit-button {
+    padding: 3px;
+    width: 130px;
+}
+
+.coursecards-container {
+    width: 100%;
+}
