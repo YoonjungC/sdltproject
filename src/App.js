@@ -32,8 +32,8 @@ function App() {
             <Home/> 
           </Route>
         </Switch>
-        <Footer/> 
       </div>
+      <Footer/> 
     </Router>
       /* folder name (ex. FAQ, Courses) is the component name */
       /* after writing header, make folders for the components, and import into App.js file*/

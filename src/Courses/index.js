@@ -14,7 +14,8 @@ export default class Courses extends React.Component {
 
     state = {
         search: "",
-        courses: []
+        courses: [],
+        type: ""
     }
 
     //set search state
@@ -30,11 +31,14 @@ export default class Courses extends React.Component {
     changeEvents=()=> {
         let course_list = 
         course_data.filter((course) => {
-            if(this.state.search.length>0) {
-                return course.name.toLowerCase().includes(this.state.search.toLowerCase())
-            }
-                return true
-            })
+        if(this.state.search.length>0) {
+            return course.name.toLowerCase().includes(this.state.search.toLowerCase())
+        }
+            return true
+        })
+        if(this.state.type.length>0) {
+            course_list = course_list.filter((course) => (course.type === this.state.type))
+        }
         this.setState({courses: course_list})
     } 
 
@@ -46,6 +50,10 @@ export default class Courses extends React.Component {
         }
       }
     
+    componentDidMount(){
+        this.changeEvents()
+    }
+
     render() {
         return (
             <div className="courses-body"> 
@@ -54,13 +62,14 @@ export default class Courses extends React.Component {
                     <input type="text" value={this.state.search} onChange={this.onInputChange} onKeyDown={this._handleKeyDown} placeholder="Search for Courses..." id="search-bar"/> 
                     <button id="submit-button" onClick={()=> {this.changeEvents()}}> Search </button> 
                 </div>
-                <div className="filter-container"> 
-                    <button> <p> Math <BarChart color="black" width="11px"/>  </p> </button>
-                    <button>  <p> Science <Flask color="black" width="11px"/>  </p> </button>
-                    <button>  <p> Humanities <Earth color="black" width="11px"/> </p> </button>
-                    <button>  <p> Arts <ColorPalette color="black" width="11px"/></p></button>
-                    <button> <p> Computer Science <Laptop color="black" width="11px"/> </p> </button>
-                    <button> <p> Music <MusicalNotes color="black" width="11px"/> </p> </button>
+                <div className="filter-container">
+
+                    <button onClick={()=> this.setState({type: "Math"}, this.changeEvents)}> <p> Math <BarChart color="black" width="11px"/>  </p> </button>
+                    <button onClick={()=> this.setState({type: "Science"}, this.changeEvents)}>  <p> Science <Flask color="black" width="11px"/>  </p> </button>
+                    <button onClick={()=> this.setState({type: "Humanities"}, this.changeEvents)}>  <p> Humanities <Earth color="black" width="11px"/> </p> </button>
+                    <button onClick={()=> this.setState({type: "Arts"}, this.changeEvents)}>  <p> Arts <ColorPalette color="black" width="11px"/></p></button>
+                    <button onClick={()=> this.setState({type: "Computer Science"}, this.changeEvents)}> <p> Computer Science <Laptop color="black" width="11px"/> </p> </button>
+                    <button onClick={()=> this.setState({type: "Music"}, this.changeEvents)}> <p> Music <MusicalNotes color="black" width="11px"/> </p> </button>
                 </div>
                 <div className="coursecards-container"> 
                     {
