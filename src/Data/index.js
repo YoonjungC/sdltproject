@@ -15,6 +15,7 @@ export const course_data = [
       grades: "Grade 9 - 12",
       student_experience: "advice",
       workload: "Heavy",
+      picture: windensemble 
    },
    {
       name: "Robotics",
@@ -22,20 +23,23 @@ export const course_data = [
       grades: "Grade 9 - 12",
       student_experience: "advice",
       workload: "Heavy",
+      picture: windensemble 
    },
    {
       name: "AP Chemistry",
       type: "Science",
       grades: "Grade 9 - 12",
       student_experience: "advice",
-      workload: "Heavy"
+      workload: "Heavy",
+      picture: windensemble 
    },
    {
       name: "Precalculus",
       type: "Math",
       grades: "Grade 9 - 12",
       student_experience: "advice",
-      workload: "Heavy"
+      workload: "Heavy",
+      picture: windensemble 
    },
 
 ]

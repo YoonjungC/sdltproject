@@ -34,7 +34,7 @@ export default function Modal({ setVisible }) {
           setVisible(false);
         }}
       >
-        <div style={{ backgroundColor: "purple" }} ref={modalRef}>
+        <div style={{ backgroundColor: "white" }} ref={modalRef}>
           <h1>Course Modal</h1>
           <button onClick={() => setVisible(false)}> close</button>
         </div>

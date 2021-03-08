@@ -7,7 +7,7 @@
 .home-body #banner {
     margin-top: 100px;
     width: 100%;
-    height: 90%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
 }
@@ -17,6 +17,9 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
 }
 
 .home-body #leftside-text h3 {
@@ -24,14 +27,24 @@
     color: rgb(53, 51, 51);
 }
 
-.home-body #leftside-text p {
+.home-body #banner #leftside-text p {
     font-size: 20px;
     color: rgb(3, 78, 128);
     margin-left: 40px;
 }
 
+.home-body #banner #rightside-icons {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+}
+
 .home-body #left-image {
-    margin-top: 500px;
+    margin-top: 100px;
+    margin-left: 200px;
     width: 300px;
     display: flex;
     justify-content: right;

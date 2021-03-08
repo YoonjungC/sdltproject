@@ -6,8 +6,8 @@ export default class FAQ extends React.Component {
     render() {
         return (
         <div className="faq-body"> 
-            <div id="title">
-        <h1> Frequently Asked Questions </h1>
+        <div id="title">
+            <h1> Frequently Asked Questions </h1>
         </div>
         <div id="faqContent">
           <h4 id="top"> Where can I find Course Offerings? </h4>
