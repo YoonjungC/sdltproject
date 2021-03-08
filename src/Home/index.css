@@ -1,4 +1,38 @@
 .home-body {
+    margin-left: 0;
     width: 100%;
     height: 90%;
+}
+
+.home-body #banner {
+    margin-top: 100px;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+.home-body #leftsize-text {
+    /* margin-left: 20px; */
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.home-body #leftside-text h3 {
+    font-size: 40px;
+    color: rgb(53, 51, 51);
+}
+
+.home-body #leftside-text p {
+    font-size: 20px;
+    color: rgb(3, 78, 128);
+    margin-left: 40px;
+}
+
+.home-body #left-image {
+    margin-top: 500px;
+    width: 300px;
+    display: flex;
+    justify-content: right;
 }
