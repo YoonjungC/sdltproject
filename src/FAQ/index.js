@@ -20,7 +20,7 @@ export default class FAQ extends React.Component {
             </p>
             <h4> What are some resources I can look at to find more information about course credits? </h4>
             <p>
-              You can check out the resources on DragonNet
+              More recourses are available on DragonNet!
             </p>
             <p id="line"> </p>
             <h4> I have another question! </h4>
