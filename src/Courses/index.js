@@ -64,12 +64,12 @@ export default class Courses extends React.Component {
                 </div>
                 <div className="filter-container">
 
-                    <button onClick={()=> this.setState({type: "Math "}, this.changeEvents)}> <p> Math <BarChart color="black" width="11px"/>  </p> </button>
-                    <button onClick={()=> this.setState({type: "Science "}, this.changeEvents)}>  <p> Science <Flask color="black" width="11px"/>  </p> </button>
-                    <button onClick={()=> this.setState({type: "Humanities "}, this.changeEvents)}>  <p> Humanities <Earth color="black" width="11px"/> </p> </button>
-                    <button onClick={()=> this.setState({type: "Arts "}, this.changeEvents)}>  <p> Arts <ColorPalette color="black" width="11px"/></p></button>
-                    <button onClick={()=> this.setState({type: "Computer Science "}, this.changeEvents)}> <p> Computer Science <Laptop color="black" width="11px"/> </p> </button>
-                    <button onClick={()=> this.setState({type: "Music "}, this.changeEvents)}> <p> Music <MusicalNotes color="black" width="11px"/> </p> </button>
+                    <button onClick={()=> this.setState({type: "Math "}, this.changeEvents)}> <p> Mathㅤ<BarChart color="black" width="11px"/>  </p> </button>
+                    <button onClick={()=> this.setState({type: "Science "}, this.changeEvents)}>  <p> Scienceㅤ<Flask color="black" width="11px"/>  </p> </button>
+                    <button onClick={()=> this.setState({type: "Humanities "}, this.changeEvents)}>  <p> Humanitiesㅤ<Earth color="black" width="11px"/> </p> </button>
+                    <button onClick={()=> this.setState({type: "Arts "}, this.changeEvents)}>  <p> Artsㅤ<ColorPalette color="black" width="11px"/></p></button>
+                    <button onClick={()=> this.setState({type: "Computer Science "}, this.changeEvents)}> <p> Computer Scienceㅤ<Laptop color="black" width="11px"/> </p> </button>
+                    <button onClick={()=> this.setState({type: "Music "}, this.changeEvents)}> <p> Musicㅤ<MusicalNotes color="black" width="11px"/> </p> </button>
                 </div>
                 <div className="coursecards-container"> 
                     {
