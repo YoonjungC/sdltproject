@@ -10,9 +10,10 @@ export default class FAQ extends React.Component {
               <h1> Frequently Asked Questions </h1>
           </div>
           <div id="faqContent">
+          <border>
             <h4 id="top"> Where can I find Course Offerings? </h4>
-            <p>
-              Please check the Explore Page
+            <p> 
+              Information on course offerings can be found on the Explore Page.
             </p>
             <h4> How do I use this site? </h4>
             <p>
@@ -20,11 +21,12 @@ export default class FAQ extends React.Component {
             </p>
             <h4> What are some resources I can look at to find more information about course credits? </h4>
             <p>
-              More recourses are available on DragonNet!
+              You can check out the resources on DragonNet for further information provided by the school.
             </p>
             <p id="line"> </p>
-            <h4> I have another question! </h4>
-            <p> Please use our chatbox which you can find on the right side of your screen </p>
+            <h4> If I have more questions, where can I ask it? </h4>
+            <p> Please use our chatbox located on the bottom right of the website. </p>
+            </border>
           </div>
           <SimpleForm />
         </div>
