@@ -77,3 +77,29 @@
     display: inherit; 
     color: black;
 }
+
+#a4,
+#s4,
+#hide4:target {
+    display: none; 
+    color: black;
+}
+
+#hide4:target + #s4,
+#hide4:target ~ #a4 {
+    display: inherit; 
+    color: black;
+}
+
+#a5,
+#s5,
+#hide5:target {
+    display: none; 
+    color: black;
+}
+
+#hide5:target + #s5,
+#hide5:target ~ #a5 {
+    display: inherit; 
+    color: black;
+}
