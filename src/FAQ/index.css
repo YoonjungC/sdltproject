@@ -25,3 +25,55 @@
     margin-top: 120px;
     
 }
+
+#a,
+#s,
+#hide:target {
+    display: none; 
+    color: black;
+}
+
+#hide:target + #s,
+#hide:target ~ #a {
+    display: inherit; 
+    color: black;
+}
+
+#a1,
+#s1,
+#hide1:target {
+    display: none; 
+    color: black;
+}
+
+#hide1:target + #s1,
+#hide1:target ~ #a1 {
+    display: inherit; 
+    color: black;
+}
+
+#a2,
+#s2,
+#hide2:target {
+    display: none; 
+    color: black;
+}
+
+#hide2:target + #s2,
+#hide2:target ~ #a2 {
+    display: inherit; 
+    color: black;
+}
+
+#a3,
+#s3,
+#hide3:target {
+    display: none; 
+    color: black;
+}
+
+#hide3:target + #s3,
+#hide3:target ~ #a3 {
+    display: inherit; 
+    color: black;
+}
